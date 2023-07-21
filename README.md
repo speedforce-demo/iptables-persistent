@@ -66,9 +66,11 @@ Add the following rules to the file:
     COMMIT
 ```
 
+<p>
     Save the file and exit the text editor.
 
     After making the changes, you can manually load the rules without restarting the system:
+</p>
 
 ```
 sudo iptables-restore < /etc/iptables/rules.v4

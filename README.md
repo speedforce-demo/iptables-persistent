@@ -43,9 +43,10 @@ Add the following rules to the file:
 COMMIT
 ```
 
+<p>
 Save the file and exit the text editor.
 If you also want to configure IPv6 rules, open the /etc/iptables/rules.v6 file with root privileges:
-
+</p>
 
 ```
 sudo nano /etc/iptables/rules.v6

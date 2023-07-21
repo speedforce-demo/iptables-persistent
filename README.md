@@ -56,14 +56,14 @@ Add the following rules to the file:
 
 
 ```
-    *filter
-    :INPUT ACCEPT [0:0]
-    :FORWARD ACCEPT [0:0]
-    :OUTPUT ACCEPT [0:0]
-    -A INPUT -j ACCEPT
-    -A OUTPUT -j ACCEPT
-    -A FORWARD -j ACCEPT
-    COMMIT
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -j ACCEPT
+-A OUTPUT -j ACCEPT
+-A FORWARD -j ACCEPT
+COMMIT
 ```
 
 <p>

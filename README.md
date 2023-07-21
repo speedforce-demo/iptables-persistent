@@ -26,7 +26,6 @@ Once the installation is complete, the iptables rules will be automatically load
 To configure the rules, open the /etc/iptables/rules.v4 file in a text editor with root privileges:
 
 ```
-
 sudo nano /etc/iptables/rules.v4
 ```
 

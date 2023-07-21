@@ -18,6 +18,7 @@ Install the iptables-persistent package:
 ```
 sudo apt install iptables-persistent
 ```
+
 During the installation, you'll be prompted to save the current IPv4 and IPv6 iptables rules. Select "Yes" for both prompts.
 
 Once the installation is complete, the iptables rules will be automatically loaded during system startup.
@@ -28,6 +29,7 @@ To configure the rules, open the /etc/iptables/rules.v4 file in a text editor wi
 
 sudo nano /etc/iptables/rules.v4
 ```
+
 Add the following rules to the file:
 
 ```
@@ -40,13 +42,15 @@ Add the following rules to the file:
 -A FORWARD -j ACCEPT
 COMMIT
 ```
-Save the file and exit the text editor.
 
+Save the file and exit the text editor.
 If you also want to configure IPv6 rules, open the /etc/iptables/rules.v6 file with root privileges:
+
 
 ```
 sudo nano /etc/iptables/rules.v6
 ```
+
 Add the following rules to the file:
 
 
@@ -60,6 +64,7 @@ Add the following rules to the file:
     -A FORWARD -j ACCEPT
     COMMIT
 ```
+
     Save the file and exit the text editor.
 
     After making the changes, you can manually load the rules without restarting the system:
@@ -70,4 +75,5 @@ sudo iptables-restore < /etc/iptables/rules.v4
 ```
 sudo ip6tables-restore < /etc/iptables/rules.v6
 ```
+
 That's it! The rules will be loaded automatically during system startup, and your network configuration should persist across reboots on your Ubuntu VM.

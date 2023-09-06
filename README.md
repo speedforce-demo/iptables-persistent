@@ -3,7 +3,7 @@ How to make iptables persistent after reboot on Linux
 
 # One Click Script 
 ```
-wget https://raw.githubusercontent.com/speedforce-demo/iptables-persistent/main/setup_iptables.sh && chmod +x setup_iptables.sh && sudo ./setup_iptables.sh
+wget https://raw.githubusercontent.com/speedforce-lk/iptables-persistent/main/setup_iptables.sh && chmod +x setup_iptables.sh && sudo ./setup_iptables.sh
 ```
 
 # Manual Setup
